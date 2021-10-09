@@ -1,0 +1,221 @@
+name: SRTTbacon_Main_Plugin
+main: srttbacon.plugin.MainCode
+version: 1.0.0
+author: SRTTbacon
+api: ["1.0.0"]
+commands:
+ Image_To_Pixel_1:
+  description: 画像のURLからドット絵を作成 | 方向1
+  usage: /Image_To_Pixel_1 <URL>
+  permission: SRTTbacon.Administrator
+ Image_To_Pixel_2:
+  description: 画像のURLからドット絵を作成 | 方向2
+  usage: /Image_To_Pixel_2 <URL>
+  permission: SRTTbacon.Administrator
+ Image_To_Pixel_3:
+  description: 画像のURLからドット絵を作成 | 方向3
+  usage: /Image_To_Pixel_3 <URL>
+  permission: SRTTbacon.Administrator
+ Set_Replace:
+  description: 指定範囲をブロックで埋めます
+  permission: SRTTbacon.Administrator
+ Set_Replace_Air:
+  description: 指定範囲のブロックを削除します
+  permission: SRTTbacon.Administrator
+ Set_Replace_Only_Air:
+  description: 指定範囲の空気のみを置き換えます
+  permission: SRTTbacon.Administrator
+ Set_Lobby_Point:
+  description: ロビーの開始位置を設定をします
+  permission: SRTTbacon.Administrator
+ Lobby:
+  description: 自身をロビーへ移動させます
+  default: true
+ Lobby_All:
+  description: 全員をロビーへ移動させます
+  permission: SRTTbacon.Administrator
+ Game:
+  description: 自身を戦闘マップへ移動させます
+  default: true
+ Set_Copy:
+  description: 指定範囲を現在位置にコピーします
+  permission: SRTTbacon.Administrator
+ Set_Copy_With_Air:
+  description: 指定範囲を現在位置にコピーします(空気を含む)
+  permission: SRTTbacon.Administrator
+ Set_Copy_Rotation:
+  description: 指定範囲を180°回転させて現在位置にコピーします
+  permission: SRTTbacon.Administrator
+ Set_Copy_Rotation_With_Air:
+  description: 空ブロックも含め指定範囲を180°回転させて現在位置にコピーします
+  permission: SRTTbacon.Administrator
+ Set_Copy_Rotation_90:
+  description: 空ブロックも含めない指定範囲を90°回転させて現在位置にコピーします
+  permission: SRTTbacon.Administrator
+ Set_Copy_Rotation_90_With_Air:
+  description: 空ブロックも含め指定範囲を90°回転させて現在位置にコピーします
+  permission: SRTTbacon.Administrator
+ Set_Blue_Core:
+  description: 青チームのコアの位置を設定します
+  permission: SRTTbacon.Administrator
+ Set_Red_Core:
+  description: 赤チームのコアの位置を設定します
+  permission: SRTTbacon.Administrator
+ Reset_Core:
+  description: コア設定を初期化します
+  permission: SRTTbacon.Administrator
+ UnLoadWorld:
+  description: 世界をアンロードします
+  permission: SRTTbacon.Administrator
+ Map_Restore:
+  description: 指定マップを再構築します
+  permission: SRTTbacon.Administrator
+ Clear_All:
+  description: 持ち物をすべてクリアします
+  permission: SRTTbacon.Administrator
+ Change_Level:
+  description: ワールドを変更します
+  permission: SRTTbacon.Administrator
+ Top-PT:
+  description: プレイヤーの所持PTトップ5を表示します
+  default: true
+ Set_Spectator:
+  description: 自身をスペクテイターモードにします
+  permission: SRTTbacon.Administrator
+
+ Set_New_Map:
+  description: 新マップを登録します 引数:マップ名
+  permission: SRTTbacon.Administrator
+ Delete_Map:
+  description: マップを削除します
+  permission: SRTTbacon.Administrator
+ Get_Map_Exist:
+  description: 指定する名前のマップが存在するか確認します 引数:マップ名
+  permission: SRTTbacon.Administrator
+ Get_Map_Names:
+  description: 登録されているマップ名をすべて表示します
+  permission: SRTTbacon.Administrator
+ Set_Map_Protect:
+  description: 指定するマップの一部を保護します 引数:マップ名
+  permission: SRTTbacon.Administrator
+ Set_Map_Restore:
+  description: 指定するマップの一部に修復機能を搭載します
+  permission: SRTTbacon.Administrator
+ Save_Map:
+  description: マップ情報を保存します
+  permission: SRTTbacon.Administrator
+ Load_Map:
+  description: マップ情報をロードします
+  permission: SRTTbacon.Administrator
+ Set_Sky_Text:
+  description: マップ上にテキストを表示させます 引数1:タイトル 引数2:内容
+  permission: SRTTbacon.Administrator
+ Set_Teleport:
+  description: 指定場所にテレポートできる看板を設置できるようになります
+  permission: SRTTbacon.Administrator
+ Delete_Teleport:
+  description: 指定した識別IDのテレポート機能を削除します
+  permission: SRTTbacon.Administrator
+ Get_Teleports:
+  description: 設定されているすべてのテレポート位置を取得します
+  permission: SRTTbacon.Administrator
+
+ Save_Main:
+  description: メイン設定を保存します
+  permission: SRTTbacon.Administrator
+ Load_Main:
+  description: メイン設定をロードします
+  permission: SRTTbacon.Administrator
+ Set_Map_Red_Spawn_Pos:
+  description: 赤チームのスポーン位置を設定します
+  permission: SRTTbacon.Administrator
+ Set_Map_Blue_Spawn_Pos:
+  description: 青チームのスポーン位置を設定します
+  permission: SRTTbacon.Administrator
+ Set_Achievement:
+  description: 称号を新たに作成します 引数:称号名
+  permission: SRTTbacon.Administrator
+  
+ Get_Achievements:
+  description: 登録されている称号をすべて表示します
+  permission: SRTTbacon.Administrator
+ Get_My_Achievements:
+  description: 自身が取得している称号を表示します
+  default: true
+ Delete_Achievements:
+  description: 登録されている称号を削除します 引数:称号名
+  permission: SRTTbacon.Administrator
+ Delete_My_Achievement:
+  description: 自身が取得している称号を削除します 引数:称号名
+  default: true
+ Set_PT:
+  description: プレイヤーのPTを変更します
+  permission: SRTTbacon.Administrator
+  
+ Start_Game:
+  description: 試合を開始します
+  permission: SRTTbacon.Administrator
+ Stop_Game:
+  description: 試合を終了させます
+  permission: SRTTbacon.Administrator
+ Set_Phase:
+  description: フェーズを切り替えます
+  permission: SRTTbacon.Administrator
+  
+ PlaySound:
+  description: 指定するイベント名を再生します
+  permission: SRTTbacon.Administrator
+ StopSound:
+  description: 再生されているすべてのサウンドを停止させます
+  permission: SRTTbacon.Administrator
+ Sound_Setting:
+  description: ゲーム内のサウンド設定を変更します
+  default: true
+ Achievement_Hint:
+  description: 称号のヒントを表示します
+  default: true
+  
+ Get_Acrobat:
+  description: 職業:アクロバットを取得します
+  permission: SRTTbacon.Administrator
+ Get_Archer:
+  description: 職業:アーチャーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Berserker:
+  description: 職業:バーサーカーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Builder:
+  description: 職業:ビルダーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Handyman:
+  description: 職業:ハンディマンを取得します
+  permission: SRTTbacon.Administrator
+ Get_Healer:
+  description: 職業:ヒーラーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Immobilizer:
+  description: 職業:イモビライザーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Miner:
+  description: 職業:マイナーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Ninja:
+  description: 職業:忍者を取得します
+  permission: SRTTbacon.Administrator
+ Get_Pyro:
+  description: 職業:パイロを取得します
+  permission: SRTTbacon.Administrator
+ Get_Scanner:
+  description: 職業:スキャナーを取得します
+  permission: SRTTbacon.Administrator
+ Get_Scout:
+  description: 職業:スカウトを取得します
+  permission: SRTTbacon.Administrator
+ Get_Warrior:
+  description: 職業:ウォーリアーを取得します
+  permission: SRTTbacon.Administrator
+  
+permissions:
+ SRTTbacon.Administrator:
+  description: 管理者権限を持っている方のみ実行可能
+  default: op
